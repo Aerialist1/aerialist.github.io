@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/Sport Club/Vaska /favicon.ico">
+  <link rel="stylesheet" href="/Sport Club/styles.css">
+  <title>DASHA Sport Club</title>
+</head>
+
+<body>
+  <header>
+    <div class="content">
+      <img class="logo" src="/Sport Club/Vaska /Dasha Logo light.png" alt="logo">
+      <nav class="desktop"> 
+        <ul>
+          <li><a href="/Sport Club/index.html">Home</a></li>
+          <div class="dropdown">
+           <li><a href="/Sport Club/classes.html">Classes</a></li>
+            <div class="dropdown-content">
+              <a href="#urban">Urban Running</a>
+              <a href="#myoga">Morning Yoga</a>
+              <a href="#yoga">Yoga</a>
+              <a href="#boxing">Boxing</a>
+            </div>
+          </div>
+          <li><a href="/Sport Club/team.html">Our Team</a></li>
+          <li><a href="/Sport Club/contact.html">Contact</a></li>
+          <li><a href="https://www.instagram.com/dasha_regiert_die_welt/?hl=en" target="_blank"><img class="icon" src="/Sport Club/Vaska /pngwing.com (1).png"></a></li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <ul>
+          <li><a href="/Sport Club/index.html" class="button">Home</a></li>
+          <li><a href="/Sport Club/team.html" class="button">Classes</a></li>
+          <li><a href="/Sport Club/team.html" class="button">Our Team</a></li>
+          <li><a href="/Sport Club/contact.html" class="button">Contact</a></li>
+          <li><a href="https://www.instagram.com/dasha_regiert_die_welt/?hl=en" target="_blank"><img class="icon" src="/Sport Club/Vaska /pngwing.com шчите.png"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="urban" class="banner">
+    <div id="urban-cta">
+      <div class="content center">
+        <div class="header">
+          <h2 class="cursive">Urban Running</h2>
+        </div>
+        <div class="link">
+           <a class="button" href=""> Join the Group </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myoga" class="banner">
+    <div id="myoga-cta">
+      <div class="content center">
+        <div class="header">
+          <h2 class="cursive">Morning Yoga</h2>
+        </div>
+        <div class="link">
+           <a class="button" href=""> Join the Group </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="yoga" class="banner">
+    <div id="yoga-cta">
+      <div class="content center">
+        <div class="header">
+          <h2 class="cursive">Yoga</h2>
+        </div>
+        <div class="link">
+           <a class="button" href=""> Join the Group </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="boxing" class="banner">
+    <div id="boxing-cta">
+      <div class="content center">
+        <div class="header">
+          <h2 class="cursive">Boxing</h2>
+        </div>
+        <div class="link">
+           <a class="button" href=""> Join the Group </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <span class="copyright">© 2022 Dasha Sport Club</span>
+      <span class="location">Never Giveup ☺︎</span>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('nav li').forEach((menu,index)=>{
+      menu.style.animation = 'start .5s forwards 0.'+index*2+'s';
+    })
+  </script>
+</body>
+</html>
