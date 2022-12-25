@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+@supports (-webkit-touch-callout: none) {
+  
+}
+
+@supports not (-webkit-touch-callout: none) {
+   
+}
+
 :root {
 	--index: calc(1vw + 1vh);
 }
