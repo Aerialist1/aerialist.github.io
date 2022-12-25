@@ -1,0 +1,286 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; 
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: white;
+}
+
+.button:hover {
+  color: black;
+  background: radial-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.icon{
+  width: 18px;
+  height: 18px;
+  animation: vutr 3s ease infinite;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+	width: 99%;
+  border-bottom: solid 1px #c6c1c1;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@keyframes vutr {
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(360deg);}
+  100%{transform: rotate(0deg);}
+  
+}
+nav li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+nav li:hover{
+  color: #c6c1c1;
+  animation: topic 0.5s ease 0s 1 normal forwards;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+@keyframes topic {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #c0bbbb;
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-content a {
+  color: #c0bbbb;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  width: 180px;
+  height: auto;
+  opacity: 1;
+  
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem;
+		width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: auto;
+  }
+
+  header .content {
+    padding: 2rem;
+		width: auto;
+  }
+
+  header .mobile ul {
+    display:inline-table;
+    justify-content: space-around;
+    align-items:flex-end;
+    width: auto;
+  }
+
+  header .mobile li {
+    padding: 0;
+		width: auto;
+  }
+} 
+
+#contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50.5rem;
+  background-image: url("/Sport Club/img/victor-freitas-cwhGcdX1ZDI-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact-cta{
+  position: relative;
+  top: 300px;
+  left: 30%;
+  width: auto;
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #8815b696;
+}
+
+#contact-cta .content {
+  width: auto;
+  margin-top: 2rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white;
+}
+
+.email{
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 760px) {
+  #contact  {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+		width: auto;
+  }
+
+  #contact-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #contact-cta .content {
+    margin-top: 0;
+		width: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #contact  {
+      height: 40rem;
+			width: auto;
+    }
+    
+    #contact-cta {
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      border: none;
+      padding-top: 5rem;
+      margin-top: 5rem;
+    }
+  
+    #contact-cta .content {
+      padding-top: 5rem;
+      margin-top: 5rem;
+			width: auto;
+    }
+  }
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: #4a4a4a;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}

@@ -1,0 +1,588 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; 
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: white;
+}
+
+.button1 {
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  color: #313131;
+}
+
+.button:hover {
+  color: black;
+  background: radial-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.button1:hover {
+  color: #313131;
+  background: radial-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container1 {
+  overflow: hidden;
+}
+
+.image-container:hover{
+  animation: hoh 0.2s ease-in-out forwards;
+}
+
+@keyframes hoh {
+  0% {transform: scale(1);}
+	100% {transform: scale(1.6);}
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.image-container1 img {
+  display: block;
+  max-width: 100%;
+}
+
+.icon{
+  width: 18px;
+  height: 18px;
+}
+
+.icon:hover{
+  animation: vutr 2s ease forwards;
+}
+
+@keyframes vutr {
+  0%{transform: rotate(0deg);opacity: 1;}
+  100%{transform: rotate(360deg);opacity: 1;}
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding-top: 300px;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 99%;
+  z-index: 100;
+  border-bottom: solid 1px #c6c1c1;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+header nav ul {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  filter: drop-shadow(rgb(209, 206, 206) 1px 2px 3px );
+  opacity: 0; 
+	mix-blend-mode:exclusion;
+}
+
+@keyframes start {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+nav li:hover{
+  color: #c6c1c1;
+  animation: topic 0.5s ease 0s 1 normal forwards;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+@keyframes topic {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+  
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #313131;
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-content a {
+  color: #313131;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  width: 180px;
+  height: auto;
+  opacity: 1;
+  filter: drop-shadow(black 2px 2px 3px);
+  animation: vaska 5s linear 0s infinite alternate both;
+  /* 20s linear 0s infinite normal both;; */
+}
+
+@keyframes vaska {
+
+  0% {transform: scale(1);}
+  50% {transform: scale(0.95);}
+	100% {transform: scale(1.1);}
+
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem 1rem;
+		width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: auto;
+  }
+
+  header .content {
+    padding: 2rem 0;
+		width: auto;
+  }
+
+  header .mobile ul {
+    display:inline-table;
+    justify-content: space-around;
+    align-items:flex-end;
+    width: auto;
+  }
+
+  header .mobile li {
+    padding: 0;
+		width: auto;
+  }
+} 
+
+/* Main */
+
+#main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 300px;
+  height: 43.5rem;
+  background-image: url("/Sport Club/img/Dasha/007.jpeg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-cta {
+  position: relative;
+  max-width: 400px;
+  line-height: 30px;
+  top: 120px;
+  left: 3%;
+  padding: 0 5rem 2.5rem 5rem; 
+}
+
+@media only screen and (max-width: 600px) {
+  #main-cta {
+    height: 20rem;
+		width: auto;
+  }
+
+  #main-cta p {
+    font-size: 1.25rem;
+    color: #f1f1f1;
+  }
+}
+
+/* Gym */
+
+#gym {
+  padding: 4rem 0;
+  background-color: #292828;
+}
+
+#gym .content {
+  padding: 0 .625rem;
+  margin-bottom: 5rem;
+}
+
+#gym .content h2 {
+  font-family: "sans-serif" ;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#gym .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#gym .images-container {
+  display: inline-flex;
+  justify-content:flex-end;
+  max-width: 100%;
+  padding: 0 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  #gym {
+    padding: 1.5rem;
+  }
+
+  #gym .content {
+    margin-bottom: 1rem;
+  }
+
+  #gym .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  #gym .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+
+  #gym .images-container {
+    padding: 0;
+  }
+
+  #gym .extra {
+    display: none;
+  }
+}
+
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: #4a4a4a;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
+
+/* Classes */
+
+#urban {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50.5rem;
+  background-image: url("/Sport Club/img/Urban running/andrew-dinh-hYTzyMok_a4-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+#myoga {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url("/Sport Club/img/morning yoga/woody-kelly-uQcWUXFALww-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#yoga {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url("/Sport Club/img/yoga/dmitriy-frantsev-SIqmq_6726Y-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#boxing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url("/Sport Club/img/boxing/matthew-payne-4tHbsNGFp18-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#urban-cta, #urban-cta, #myoga-cta, 
+#yoga-cta, #boxing-cta {
+  position: relative;
+  top: 300px;
+  left: 30%;
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #8815b696;
+}
+
+ #urban-cta .content, #urban-cta .content, #myoga-cta .content, 
+ #yoga-cta .content, #boxing-cta .content {
+  width: auto;
+  margin-top: 2rem;	
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#urban-cta h1, #myoga-cta h1, #yoga-cta h1, #boxing-cta h1 {
+  font-size: 3.125rem;
+}
+
+#urban-cta .button, #myoga-cta .button, #yoga-cta .button, #boxing-cta .button {
+  margin-top: 1.625rem;
+  padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+   #urban, #myoga, #yoga, #boxing{
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+		width: auto;
+  }
+
+ #urban-cta, #myoga-cta, #yoga-cta, #boxing-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+
+  #urban-cta .content, #myoga-cta .content,
+	#yoga-cta .content, #boxing-cta .content {
+    margin-top: 0;
+		width: auto;
+  }
+
+  #urban-cta  h1, #myoga-cta h1, #yoga-cta h1, #boxing-cta h1 {
+    font-size: 3.125rem;
+  }
+
+  #urban-cta  h2, #myoga-cta h2, #yoga-cta h2, #boxing-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #urban  {
+    height: 20rem;
+    padding-top: 300px;
+		width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #myoga, #yoga, #boxing{
+    height: 20rem;
+		width: auto;
+  }
+
+  #urban-cta h1, #myoga-cta h1, #yoga-cta h1, #boxing-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #urban-cta  h2, #myoga-cta h2, #yoga-cta h2, #boxing-cta h2  {
+    font-size: 2rem;
+  }
+}
+ 
+
+
+/*Team*/
+
+.image-container img{
+  overflow: hidden;
+  max-width: 100%;
+  display: block;
+}
+
+#team-section1 {
+  display:flex;
+  justify-content: space-between;
+  padding: 12rem 5% 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+#team-section2 {
+  display:flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+.team {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.team .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.team h2 {
+  padding-top: 40px;
+  padding-bottom: .5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.team h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+@media only screen and (max-width: 895px) {
+
+  #teams-section {
+    padding: 1rem;
+  }
+
+  .team {
+    margin: 0px .5rem;
+    padding: 1rem;
+  }
+
+  .team h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  .team h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #teams-section {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .team {
+    margin: 0;
+    padding: 2rem 1rem 0 1rem;
+    margin-top: 3rem;
+  }
+
+  .team .content {
+    padding: 1.25rem 0 1rem 0;
+  }
+}
+
+
