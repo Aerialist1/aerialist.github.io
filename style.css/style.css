@@ -407,21 +407,31 @@ p {
 	}
  }
 
+@media only screen and (min-device-width: 420px){
+	.three {
+		height: 200vh;
+	}
+ }
+
 .circular-a {
-        display: grid;
-	max-width: 10vw;
-	margin-left: 50vw;
-	margin-right: 50vw;
-	position: sticky;
-        place-items: center;
-	z-index: 999999;
-	top: 0;
-	left: calc((var(--index)* 0.2));
-        right: calc((var(--index)* 0.2));
-	font-size: calc((var(--index)* 2.2));
-	color: black;
-	text-shadow:  3px 5px 8px white;
-	transition: 0.5s ease-out;
-	/* transform: rotate(180deg); */
+  display: none;
 }
+
+@media only screen and (min-device-width: 420px) {
+	.circular-a{
+		display: grid;
+		max-width: 10vw;
+		margin-left: 50vw;
+		margin-right: 50vw;
+		position: sticky;
+		place-items: center;
+		z-index: 999999;
+		top: 0;
+		left: calc((var(--index)* 0.2));
+		right: calc((var(--index)* 0.2));
+		font-size: calc((var(--index)* 2.2));
+		color: black;
+		text-shadow:  3px 5px 8px white;
+		transition: 0.5s ease-out;
+	}
 
