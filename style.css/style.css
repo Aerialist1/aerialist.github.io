@@ -416,9 +416,9 @@ p {
         place-items: center;
 	z-index: 999999;
 	top: 0;
-	left: calc((var(--index)* 0.1));
-        right: calc((var(--index)* 0.1));
-	font-size: calc((var(--index)* 2));
+	left: calc((var(--index)* 0.2));
+        right: calc((var(--index)* 0.2));
+	font-size: calc((var(--index)* 2.2));
 	color: black;
 	text-shadow:  3px 5px 8px white;
 	transition: 0.5s ease-out;
