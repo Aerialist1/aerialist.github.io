@@ -4,27 +4,27 @@
 	box-sizing: border-box;
 }
 
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   
 }
 
 @supports not (-webkit-touch-callout: none) {
    
-}
+} */
 
 :root {
 	--index: calc(1vw + 1vh);
 }
 
 html {
-	width: 100%;
-  height: 100vh;
+	min-width: 100%;
+        height: 100vh;
 	background-color: #000000;
 	font-family: monospace;
 }
 
 body {
-	width: 100%;
+	min-width: 100%;
 	height: 100vh;
 	font-family: monospace;
 }
@@ -145,7 +145,7 @@ h1 {
 
 .intro {
 	top: 0;
-	width: 100%;
+	min-width: 100%;
 	height: 185vh;
 	position: sticky;
 }
@@ -153,17 +153,17 @@ h1 {
 @media only screen and (min-device-width: 420px){
  
 	.intro {
-	  height: 300vh; 
+	  height: 300vh;
  }
 }
 
 
 .intro canvas {
 	border-radius: 50%;
-  background-size: 100%;
-  transform: translate(-50%, -50%);
-  max-width: 50vw;
-  max-height: 50vh;
+        background-size: 100%;
+        transform: translate(-50%, -50%);
+        max-width: 50vw;
+        max-height: 50vh;
 	z-index: 99999;
 	place-items: center;
 	margin-top: 0.5vh;
@@ -197,7 +197,7 @@ h1 {
 }
 
 .one {
-	width: 100%;
+	min-width: 100%;
 	height: 100vh;
 	position: sticky;
 	background-color: #000000;
@@ -212,14 +212,14 @@ h1 {
 	}
 
 .divider {
-	width: 100%;
+	min-width: 100%;
 	height: 2px;
 	background: #fff;
 	z-index: 1;
 }
 
 .about {
-	width: 100%;
+	min-width: 100%;
 	height: 95vh;
 	position: sticky;
 	z-index: 1;	
@@ -252,7 +252,7 @@ p {
 }
 
 .about-container {
-	width: 100%;
+	min-width: 100%;
 }
 
 .logos {
@@ -394,7 +394,7 @@ p {
 .three {
 	position:sticky;
 	height: 100vh;
-	width: 100%;
+	min-width: 100%;
 	top: 0;
 	z-index: 0;
 	background-image: linear-gradient(176deg, rgba(0,0,0,1) 35%, rgba(32,0,78,1) 100%);
