@@ -150,7 +150,7 @@ h1 {
 	position: sticky;
 }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
  
 	.intro {
 	  height: 300vh;
@@ -205,7 +205,7 @@ h1 {
 	z-index: 1;
 }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
 	.one {
 		height: 200vh; 
 	 }
@@ -225,7 +225,7 @@ h1 {
 	z-index: 1;	
 }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
 	.about {
 		 height: 120vh; 
 	} 
@@ -314,7 +314,7 @@ p {
 	opacity: 1;
 }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
 	.logos__item img, .logos__item1 img, .logos__item2 img {
 		width: 6vw;
 	}
@@ -372,7 +372,7 @@ p {
 	filter: drop-shadow(rgb(172, 171, 171) 7px 7px 6px);
 }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
 	.dasha img {
 		width: 30vw;
 	}
@@ -407,7 +407,7 @@ p {
 	}
  }
 
-@media only screen and (min-device-width: 420px){
+@media only screen and (min-device-width: 768px){
 	.three {
 		height: 200vh;
 	}
@@ -417,7 +417,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-device-width: 420px) {
+@media only screen and (min-device-width: 768px) {
 	.circular-a{
 		display: grid;
 		max-width: 10vw;
