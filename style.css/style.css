@@ -17,14 +17,14 @@
 }
 
 html {
-	width: 100vw;
+	min-width: 100vw;
         height: 100vh;
 	background-color: #000000;
 	font-family: monospace;
 }
 
 body {
-	width: 100vw;
+	min-width: 100vw;
 	height: 100vh;
 	font-family: monospace;
 }
@@ -110,7 +110,7 @@ h1 {
 
 #menu{
   z-index:999;
-  width:100vw;
+  min-width:100vw;
   min-height:100%;
   position: fixed;
   top:0;
@@ -145,7 +145,7 @@ h1 {
 
 .intro {
 	top: 0;
-	width: 100vw;
+	min-width: 100vw;
 	height: 185vh;
 	position: sticky;
 }
@@ -197,7 +197,7 @@ h1 {
 }
 
 .one {
-	width: 100vw;
+	min-width: 100vw;
 	height: 100vh;
 	position: sticky;
 	background-color: #000000;
@@ -212,14 +212,14 @@ h1 {
 	}
 
 .divider {
-	max-width: 100%;
+	min-width: 100vw;
 	height: 2px;
 	background: #fff;
 	z-index: 1;
 }
 
 .about {
-	width: 100vw;
+	min-width: 100vw;
 	height: 95vh;
 	position: sticky;
 	z-index: 1;	
@@ -252,7 +252,7 @@ p {
 }
 
 .about-container {
-	width: 100vw;
+	min-width: 100vw;
 }
 
 .logos {
@@ -393,19 +393,13 @@ p {
 
 .three {
 	position:sticky;
-	width: 100vw;
+	min-width: 100vw;
 	height: 100vh;
 	top: 0;
 	z-index: 0;
 	background-image: linear-gradient(176deg, rgba(0,0,0,1) 35%, rgba(32,0,78,1) 100%);
 	font-family: monospace;
 }
-
-@media only screen and (min-device-width: 420px){
-	.three {
-		height: 200vh;
-	}
- }
 
 @media only screen and (min-device-width: 768px){
 	.three {
