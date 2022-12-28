@@ -145,7 +145,7 @@ h1 {
 
 .intro {
 	top: 0;
-	max-width: 100%;
+	width: 100vw;
 	height: 185vh;
 	position: sticky;
 }
@@ -197,7 +197,7 @@ h1 {
 }
 
 .one {
-	max-width: 100%;
+	width: 100vw;
 	height: 100vh;
 	position: sticky;
 	background-color: #000000;
@@ -219,7 +219,7 @@ h1 {
 }
 
 .about {
-	max-width: 100%;
+	width: 100vw;
 	height: 95vh;
 	position: sticky;
 	z-index: 1;	
@@ -252,7 +252,7 @@ p {
 }
 
 .about-container {
-	max-width: 100%;
+	width: 100vw;
 }
 
 .logos {
@@ -393,8 +393,8 @@ p {
 
 .three {
 	position:sticky;
+	width: 100vw;
 	height: 100vh;
-	max-width: 100%;
 	top: 0;
 	z-index: 0;
 	background-image: linear-gradient(176deg, rgba(0,0,0,1) 35%, rgba(32,0,78,1) 100%);
