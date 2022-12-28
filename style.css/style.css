@@ -17,14 +17,14 @@
 }
 
 html {
-	min-width: 100vw;
+	max-width: 100vw;
         height: 100vh;
 	background-color: #000000;
 	font-family: monospace;
 }
 
 body {
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 100vh;
 	font-family: monospace;
 }
@@ -110,7 +110,7 @@ h1 {
 
 #menu{
   z-index:999;
-  min-width:100vw;
+  max-width:100vw;
   min-height:100%;
   position: fixed;
   top:0;
@@ -145,7 +145,7 @@ h1 {
 
 .intro {
 	top: 0;
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 185vh;
 	position: sticky;
 }
@@ -197,7 +197,7 @@ h1 {
 }
 
 .one {
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 100vh;
 	position: sticky;
 	background-color: #000000;
@@ -212,14 +212,14 @@ h1 {
 	}
 
 .divider {
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 2px;
 	background: #fff;
 	z-index: 1;
 }
 
 .about {
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 95vh;
 	position: sticky;
 	z-index: 1;	
@@ -252,7 +252,7 @@ p {
 }
 
 .about-container {
-	min-width: 100vw;
+	max-width: 100vw;
 }
 
 .logos {
@@ -393,7 +393,7 @@ p {
 
 .three {
 	position:sticky;
-	min-width: 100vw;
+	max-width: 100vw;
 	height: 100vh;
 	top: 0;
 	z-index: 0;
