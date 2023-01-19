@@ -27,7 +27,6 @@ body {
 	min-width: 100vw;
 	height: 100vh;
 	font-family: monospace;
-	overflow: auto;
 }
 
 h1 {
