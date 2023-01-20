@@ -17,7 +17,7 @@
 }
 
 html {
-	nin-width: 100vw;
+	min-width: 100vw;
         height: 100vh;
 	background-color: #000000;
 	font-family: monospace;
@@ -198,7 +198,7 @@ h1 {
 }
 
 .one {
-	width: 100vw;
+	min-width: 100vw;
 	height: 100vh;
 	position: sticky;
 	background-color: #000000;
@@ -214,14 +214,14 @@ h1 {
 	}
 
 .divider {
-	width: 100vw;
+	min-width: 100vw;
 	height: 2px;
 	background: #fff;
 	z-index: 1;
 }
 
 .about {
-	width: 100vw;
+	min-width: 100vw;
 	height: 95vh;
 	position: sticky;
 	z-index: 1;	
@@ -255,7 +255,7 @@ p {
 }
 
 .about-container {
-	width: 100vw;
+	min-width: 100vw;
 }
 
 .logos {
@@ -397,7 +397,7 @@ p {
 
 .three {
 	position:sticky;
-	width: 100vw;
+	min-width: 100vw;
 	height: 100vh;
 	top: 0;
 	z-index: 0;
