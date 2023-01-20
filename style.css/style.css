@@ -17,14 +17,14 @@
 }
 
 html {
-	width: 100vw;
+	nin-width: 100vw;
         height: 100vh;
 	background-color: #000000;
 	font-family: monospace;
 }
 
 body {
-	width: auto;
+	min-width: 100vw;
 	height: 100vh;
 	font-family: monospace;
 }
@@ -153,6 +153,7 @@ h1 {
 @media only screen and (min-device-width: 768px){
  
 	.intro {
+	  width: 100vw;
 	  height: 300vh;
  }
 }
@@ -207,6 +208,7 @@ h1 {
 
 @media only screen and (min-device-width: 768px){
 	.one {
+		width: 100vw;
 		height: 200vh; 
 	 }
 	}
@@ -227,6 +229,7 @@ h1 {
 
 @media only screen and (min-device-width: 768px){
 	.about {
+		 width: 100vw;
 		 height: 120vh; 
 	} 
  }
@@ -316,6 +319,7 @@ p {
 
 @media only screen and (min-device-width: 768px){
 	.logos__item img, .logos__item1 img, .logos__item2 img {
+		
 		width: 6vw;
 	}
  }
@@ -403,6 +407,7 @@ p {
 
 @media only screen and (min-device-width: 768px){
 	.three {
+		width: 100vw;
 		height: 200vh;
 	}
  }
