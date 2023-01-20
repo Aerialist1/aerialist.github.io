@@ -151,7 +151,7 @@ let loader = document.getElementById('preloader');
 // });
 
 window.addEventListener('load', function(){
-loader.style.display = ('none').delay(350).fadeOut('slow');
+loader.style.display = 'none';
 });
 
 // Loading Page
