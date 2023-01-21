@@ -37,6 +37,14 @@ h1 {
 	color: gray;
 }
 
+h2 {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: gray;
+}
+
 #burger-menu {
   opacity: 0.5;
   cursor: pointer;
