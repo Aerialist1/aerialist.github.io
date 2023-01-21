@@ -144,15 +144,15 @@ burgerMenu.addEventListener('click',function(){
   overlay.classList.toggle("overlay");
 });
 
-let loader = document.getElementById('preloader');
+// let loader = document.getElementById('preloader');
 
-// $(window).load(function() {
-//      $('#preloader').delay(350).fadeOut('slow');
-// });
-
-window.addEventListener('load', function(){
-loader.style.display = 'none';
+$(window).load(function() {
+     $('#preloader').delay(350).fadeOut('slow');
 });
+
+// window.addEventListener('load', function(){
+// loader.style.display = 'none';
+// });
 
 // Loading Page
 
