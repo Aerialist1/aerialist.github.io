@@ -445,7 +445,7 @@ p {
 	
 	#preloader {
 	background: #000 url(/aerialist.github.io/logos/7SAn.gif) no-repeat center center;
-	background-size: 100%;
+	background-size: 50%;
 	top: 0;	
    	width: 100vw;
 	height: 100vh;
