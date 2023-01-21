@@ -45,7 +45,7 @@ h1 {
   margin: calc(var(--index) * 2);
   overflow: visible;
   position: fixed;
-  z-index:9999;
+  z-index:9998;
 }
 
 #burger-menu:hover{
@@ -437,11 +437,12 @@ p {
 	
 	#preloader {
 	background: #000 url(/aerialist.github.io/logos/SVKl.gif) no-repeat center center;
-	background-size: 30%;	
+	background-size: 30%;
+	top: 0;	
    	width: 100vw;
 	height: 100vh;
 	position: fixed;
-	z-index: 100;
+	z-index: 9999;
 		
 	
 	}
